@@ -1,0 +1,23 @@
+{
+  "name": "consistent-hash-lab",
+  "version": "1.0.0",
+  "description": "离线一致性哈希分片路由与迁移对照后端（单副本虚拟节点哈希环）",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "cli": "tsx src/cli.ts",
+    "demo": "tsx src/demo.ts",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
