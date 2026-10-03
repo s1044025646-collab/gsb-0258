@@ -1,0 +1,20 @@
+{
+  "name": "consistent-hash-lab",
+  "version": "1.0.0",
+  "description": "离线一致性哈希分片路由与迁移对照后端（TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/test/ring.test.js dist/test/service.test.js dist/test/api.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "tsc && node dist/src/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
